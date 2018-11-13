@@ -7,7 +7,7 @@ public void setup()
   size(600,600);
   ship.setX(100);
   ship.setY(100);
-  stars = new Star[100];
+  stars = new Star[200];
   for (int i = 0; i < stars.length ; i++)
   {
   	stars[i] = new Star();
