@@ -10,6 +10,6 @@ class Star //note that this class does NOT extend Floater
   {
   	noStroke();
   	fill((int)(Math.random()*601));
-  	ellipse(myX,myY,10,10);
+  	ellipse(myX,myY,3,3);
   }
 }
