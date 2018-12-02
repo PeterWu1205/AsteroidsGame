@@ -1,6 +1,7 @@
 Spaceship ship = new Spaceship();
 private int turnR = 5;
 private float accelR = 0.5;
+Asteroid[] rocks;
 Star[] stars;
 public void setup() 
 {
@@ -8,9 +9,14 @@ public void setup()
   ship.setX(100);
   ship.setY(100);
   stars = new Star[200];
+  rocks = new Asteroid[20];
   for (int i = 0; i < stars.length ; i++)
   {
   	stars[i] = new Star();
+  }
+  for (int i = 0; i < rocks.length ; i++)
+  {
+    rocks[i] = new Asteroid();
   }
 }
 public void draw() 
@@ -20,6 +26,11 @@ public void draw()
   	{
   		stars[i].show();
   	}
+  for (int i = 0; i < rocks.length ; i++)
+    {
+      rocks[i].show();
+      rocks[i].move();
+    }
   	ship.show();
   	ship.move();
 }
