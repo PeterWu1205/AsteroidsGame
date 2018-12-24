@@ -32,7 +32,6 @@ public void draw()
     }
   }
   for (int i = 0; i < stars.length ; i++)
-<<<<<<< HEAD
     {
       stars[i].show();
     }
@@ -46,7 +45,7 @@ public void draw()
         rocks.remove(i);
       }
     }
-    for(int i = 0; i < pellets.size();i++)
+  for(int i = 0; i < pellets.size();i++)
     {
       for(int a = 0; a < rocks.size(); a++)
       {
@@ -58,24 +57,10 @@ public void draw()
           break;
         }
       }
-=======
-  	{
-  		stars[i].show();
-  	}
-  for (int i = 0; i < rocks.size() ; i++)
-    {
-      rocks.get(i).show();
-      rocks.get(i).move();
-      float d = dist(ship.getX(), ship.getY(), rocks.get(i).getX(), rocks.get(i).getY());
-      if( d < 10)
-      {
-        rocks.remove(i);
-      }
->>>>>>> 7122fdf3bd5498ba07ee50368d13e301a8a8bcf9
     }
     ship.show();
     ship.move();
-}
+  }
 public void keyPressed()
   {
     if(key == ' ')
