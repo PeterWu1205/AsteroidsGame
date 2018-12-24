@@ -1,7 +1,7 @@
 class Asteroid extends Spaceship
 {
 	private int rotSpeed = (int)((Math.random()*15)-7);
-	private int AstSize = 4;
+	private int AstSize = 20;
 	public Asteroid()
 	{
 		corners = 4;
